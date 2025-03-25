@@ -18,12 +18,12 @@ A Python application for selectively blurring faces in videos with an interactiv
 
 ## 🚀 Installation
 
-### 📋 Requirements
+### Requirements
 
 - Python 3.8
 - Conda package manager
 
-### 📦 Dependencies
+### Dependencies
 
 - PyTorch 1.13.1
 - torchvision 0.14.1
@@ -32,14 +32,14 @@ A Python application for selectively blurring faces in videos with an interactiv
 - pillow 9.4.0
 - numpy 1.24.1
 
-### 📥 Step 1: Clone the repository or download the source code
+### Step 1: Clone the repository or download the source code
 
 ```bash
 git clone https://github.com/yourusername/face-blur-framework.git
 cd face-blur-framework
 ```
 
-### 🔨 Step 2: Create and activate a Conda environment
+### Step 2: Create and activate a Conda environment
 
 ```bash
 # Create a new Conda environment named "faceblur" with Python 3.8
@@ -47,7 +47,7 @@ conda create -n faceblur python=3.8
 conda activate faceblur
 ```
 
-### 📚 Step 3: Install dependencies with Conda and pip
+### Step 3: Install dependencies with Conda and pip
 
 ```bash
 # Install PyTorch, torchvision
@@ -60,29 +60,11 @@ pip install pillow==9.4.0
 pip install numpy==1.24.1
 ```
 
-### 💻 Alternative Install for CPU-Only (no GPU)
+### Alternative Install for CPU-Only (no GPU)
 
 ```bash
-# Create environment
-conda create -n faceblur python=3.8
-conda activate faceblur
-
 # Install CPU-only PyTorch
 conda install pytorch=1.13.1 torchvision=0.14.1 cpuonly -c pytorch
-
-# Install remaining dependencies
-pip install facenet-pytorch==2.5.2
-pip install opencv-python==4.7.0.72
-pip install pillow==9.4.0
-pip install numpy==1.24.1
-```
-
-### ✅ Step 4: Verify installation
-
-To verify that the dependencies are installed correctly:
-
-```bash
-python -c "import torch; import torchvision; import facenet_pytorch; import cv2; import PIL; import numpy; print('All dependencies installed successfully!')"
 ```
 
 ## 📖 Usage
