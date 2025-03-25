@@ -101,96 +101,14 @@ The application provides convenient keyboard shortcuts for quick operation:
 |-----------|-------------------------------------------|
 | O         | 📂 Open a video file                      |
 | S         | 💾 Save processed video                   |
-| A         | ⏮️ Previous frame                         |
-| D         | ⏭️ Next frame                            |
+| A / Left  | ⏮️ Previous frame                         |
+| D / Right | ⏭️ Next frame                            |
 | F         | 📋 Copy regions to next frame & move forward |
 | Q         | 🔄 Toggle auto-detect faces mode (on/off) |
 | R         | 🔍 Run face detection on current frame    |
 | Left Arrow| ⏮️ Previous frame (alternative)           |
 | Right Arrow| ⏭️ Next frame (alternative)              |
 
-### Using the Interface
-
-#### 🎬 Loading & Managing Videos
-
-- **Open Video** 📂
-  - Click the "Open Video (O)" button in the top bar
-  - Select your video file (supported formats: mp4, avi, mov, mkv)
-  - The first frame will load with detected faces automatically blurred
-
-- **Save Video** 💾
-  - Click the "Save Video (S)" button
-  - Choose a filename and location
-  - A progress bar will show processing status
-  - The video will be saved with all blur regions applied to all frames
-
-#### 🔍 Navigating Through Frames
-
-- **Frame Navigation** ⏮️ ⏭️
-  - Click "Previous (A)" or "Next (D)" buttons to move between frames
-  - Use the slider at the bottom to jump to a specific frame
-  - Press A/D keys or Left/Right arrow keys for quick navigation
-  - Current frame number and total frames are displayed at the top
-
-- **Copy Regions** 📋
-  - Click "Maintain Prev Box (F)" button to copy all blur regions to the next frame
-  - The application will automatically move to the next frame
-  - This is useful for tracking faces across multiple frames
-
-#### 🔎 Face Detection
-
-- **Auto Detect** 🔄
-  - Toggle "Auto Detect (Q)" on/off to control automatic face detection
-  - When ON: faces are automatically detected and blurred in each frame
-  - When OFF: no automatic detection occurs (useful for manual work)
-
-- **Run Detection** 🔍
-  - Click "Run Detection (R)" to detect faces in the current frame only
-  - Useful when Auto Detect is OFF but you want to detect faces in a specific frame
-
-#### 🎭 Blur Management
-
-- **Adding Blur Regions** ✏️
-  - Simply click and drag anywhere on the frame to create a manual blur region
-  - Manual regions appear with blue outlines labeled "Manual Blur"
-  - Detected face regions appear with red outlines labeled "Auto Blur"
-  - Press ESC to cancel drawing
-
-- **Removing Blur** 🗑️
-  - Click on any blur region (auto or manual) to remove it
-  - The region will be immediately removed from the current frame only
-
-- **Adjusting Blur Parameters** ⚙️
-  - Use the "Blur Strength" slider to control blur intensity (sigma)
-  - Use the "Blur Size" slider to control blur radius (kernel size)
-  - Changes apply to newly created blur regions
-
-#### 📊 Status Information
-
-- The status bar at the bottom shows:
-  - Current frame / total frames
-  - FPS of the video
-  - Number of detected faces
-  - Auto-detect status
-  - Number of manual and auto blur regions in the current frame
-
-## 🔧 Technical Details
-
-### 🧩 Components
-
-- **🧠 FaceDetector**: Uses MTCNN (Multi-task Cascaded Convolutional Networks) for robust face detection
-- **🌫️ BlurManager**: Manages both automatically detected and manually created blur regions
-- **🎞️ VideoProcessor**: Handles video I/O and frame processing
-- **🖌️ ManualBlurDialog**: User interface for configuring manual blur regions
-- **🖥️ FaceBlurUI**: Main application interface
-
-### ⚡ Performance Tips
-
-- 🚀 Face detection results are cached to improve performance
-- 💨 Processed frames are cached for quick navigation
-- 🧵 Video saving is done in a background thread to keep UI responsive
-- ⚠️ Large or high-resolution videos may take longer to process
-- 🖥️ GPU acceleration is used automatically if available
 
 ## 📜 License
 
