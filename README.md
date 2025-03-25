@@ -50,7 +50,7 @@ conda activate faceblur
 ### 📚 Step 3: Install dependencies with Conda and pip
 
 ```bash
-# Install PyTorch, torchvision and CUDA toolkit
+# Install PyTorch, torchvision
 pip install torch==1.13.1 torchvision==0.14.1
 
 # Install remaining dependencies through pip
@@ -106,9 +106,11 @@ The application provides convenient keyboard shortcuts for quick operation:
 | F         | 📋 Copy regions to next frame & move forward |
 | Q         | 🔄 Toggle auto-detect faces mode (on/off) |
 | R         | 🔍 Run face detection on current frame    |
-| Left Arrow| ⏮️ Previous frame (alternative)           |
-| Right Arrow| ⏭️ Next frame (alternative)              |
 
+## 🔮 Future Development Plans
+
+- [ ] Adjustable Bounding Boxes — Interactive drag functionality to resize and reposition blur regions for more precise control  
+- [ ] Advanced Face Detection Models — Integration of newer, more accurate face detection architectures to improve detection rate and reduce false positives  
 
 ## 📜 License
 
