@@ -15,7 +15,6 @@ A Python application for selectively blurring faces in videos with an interactiv
   <img src="assets/demo.gif" width="80%" alt="Face Blurring Demo">
 </p>
 
-
 ## 🚀 Installation
 
 ### Requirements
@@ -35,8 +34,8 @@ A Python application for selectively blurring faces in videos with an interactiv
 ### Step 1: Clone the repository or download the source code
 
 ```bash
-git clone https://github.com/yourusername/face-blur-framework.git
-cd face-blur-framework
+git clone https://github.com/Songinpyo/Open-Face-Blur
+cd Open-Face-Blur
 ```
 
 ### Step 2: Create and activate a Conda environment
